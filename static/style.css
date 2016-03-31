@@ -1,0 +1,200 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin: 0px;
+	background-color: white;
+}
+
+h1 {
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	margin-top: 5em;
+}
+
+.header {
+    text-align: left;
+    margin: 10em 6.75em 10em 6.75em;
+}
+
+.menu {
+	position: absolute;
+	text-decoration: none;
+	top: 5em;
+    right: 8.25em;
+    z-index:999;
+}
+
+#overlay {
+	position: fixed;
+	z-index: 888;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+#overlay nav ul{
+	list-style-type: none;
+	position: fixed;
+	width: 100%;
+    height: 100%;
+    top: 25%;
+    left: 0;
+}
+
+#overlay a {
+	color: white;
+	font-size: 5em;
+}
+
+.grid {
+	display: block;
+	margin: -1.25em 0 0 -1.25em;
+}
+
+.grid-third {
+	width: 26%;
+	height: 250px;
+	margin: 5px;
+	display: inline-block;
+	background-size: cover;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.grid-third:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.names {
+	/*display: none;*/
+	color: white;
+	margin-top: 190px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.grid-third:hover .names {
+	background-color: rgba(0,0,0,0.8);
+	-webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+#k1 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/stephen-gostkowski.png");
+}
+#k2 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/adam-vinatieri.png");
+}
+#k3 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/steven-hauschka.png");
+}
+#k4 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/justin-tucker.png");
+}
+#k5 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/matt-prater.png");
+}
+#k6 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/brandon-mcmanus.png");
+}
+#k7 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/mason-crosby.png");
+}
+#k8 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/chandler-catanzaro.png");
+}
+#k9 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/robbie-gould.png");
+}
+#k10 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/graham-gano.png");
+}
+#k11 {
+	background-color: #ECEFF1;
+	background-image: url("img/players/cody-parkey.png");
+}
+#rankings {
+	background-color: #ECEFF1;
+	background-image: url("img/players/rankings.png");
+}
+
+.stats-row {
+	width: 100%;
+}
+
+.stats-col {
+	margin-right: 50px;
+	display: inline-block;
+}
+
+.stats-col-third {
+	width:30%;
+	display: inline-block;
+}
+
+.rankings-row {
+	width: 100%;
+}
+
+.rankings-col {
+    padding: 20px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.rankings-col:hover {
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    background-color: #FAFAFA !important;
+    color: black !important;
+}
+
+.rankings-stats {
+	display: none;
+	color: black !important;
+	margin-left: 10%;
+}
+
+.rankings-col:hover .rankings-stats {
+	display: inline;
+	-webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+	.grid-half {
+		width: 45% !important;
+	}
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.grid-full {
+		width: 100% !important;
+	}
+}
