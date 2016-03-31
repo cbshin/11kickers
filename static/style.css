@@ -144,16 +144,58 @@ footer {
 
 .stats-row {
 	width: 100%;
+	text-align: center;
 }
 
 .stats-col {
-	margin-right: 50px;
-	display: inline-block;
+    width: 23%;
+    height: 225px;
+    vertical-align: top;
+    margin-right: 10px;
+    display: inline-block;
+    color: white;
 }
 
-.stats-col-third {
-	width:30%;
-	display: inline-block;
+#k1-box-1{
+	background: 
+    linear-gradient(
+      rgba(26, 35, 126, 0.7), 
+      rgba(26, 35, 126, 0.7)
+    ), url('img/box/k1/1.jpg');
+	background-size: cover;
+}
+
+#k1-box-2{
+	background: 
+    linear-gradient(
+      rgba(26, 35, 126, 0.7), 
+      rgba(26, 35, 126, 0.7)
+    ), url('img/box/k1/2.jpg');
+    background-size: cover;
+}
+
+#k1-box-3{
+	background: 
+    linear-gradient(
+      rgba(26, 35, 126, 0.7), 
+      rgba(26, 35, 126, 0.7)
+    ), url('img/box/k1/3.jpg');
+    background-size: cover;
+}
+
+#k1-box-4{
+	background: 
+    linear-gradient(
+      rgba(26, 35, 126, 0.7), 
+      rgba(26, 35, 126, 0.7)
+    ), url('img/box/k1/4.jpg');
+    background-size: cover;
+}
+
+.box-numbers {
+    font-size: 3.5em;
+    margin-top: 75px;
+    margin-bottom: -10px;
 }
 
 .rankings-row {

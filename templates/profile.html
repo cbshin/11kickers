@@ -18,17 +18,25 @@
 		<h1>{{title}}</h1>
 		<h1 style="font-style:italic">"{{quote}}"</h1>
 		
-		{% block social %}
+		{% block rankings %}
 		{% endblock %}
 
-		{% block about %}
+		{% block social %}
 		{% endblock %}
 
 		{% block stats %}
 		{% endblock %}
 
-		{% block rankings %}
-		{% endblock %}
+		<div style="width:100%;margin-top:25px;">
+			<div style="display:inline-block;vertical-align:top;">
+				{% block twitter %}
+				{% endblock %}
+			</div>
+			<div style="display:inline-block;vertical-align:top;margin-top:40px;">
+				{% block gif %}
+				{% endblock %}
+			</div>
+		</div>
 		
 		
 	</div>
