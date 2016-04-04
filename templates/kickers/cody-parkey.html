@@ -1,6 +1,63 @@
 {% extends "templates/profile.html" %}
-{% block content %} 
+{% block team %} 
+	<span style="background-color:#009688;margin-right:10px;padding: 15px;font-size: 2em;color: white;">#1</span>
+	<span class="team-name" style="display:inline-block;vertical-align: middle;font-size: 1.5em;">
+		Philadelphia <br>
+		Eagles
+	</span>
+{%endblock%}
+
+{% block social %} 
 	<p>
-		Stats about stephen gost
+		<a href="https://www.facebook.com/pages/Cody-Parkey/350484281771295?fref=ts">
+			<span style="color:#3F51B5;">
+				<i class="fa fa-facebook-square"></i> 
+				/CodyParkey
+			</span>
+		</a><span class="break"><br></span>
+		<a href="https://twitter.com/CParkey36">
+			<span style="color:#2196F3;">
+				<i class="fa fa-twitter-square smicon" style="margin-left:10px;"></i> 
+				@CParkey36
+			</span>
+		</a><span class="break"><br></span>
+		<a href="https://www.instagram.com/codyparkey/">
+			<span style="color:#009688;">
+				<i class="fa fa-instagram smicon" style="margin-left:10px;"></i> 
+				@codyparkey
+			</span>
+		</a>
 	</p>
 {%endblock%}
+
+{% block stats %}
+	<div class="stats-row">
+		<div class="stats-col" id="k11-box-1">
+			<p class="box-numbers" style="font-size:3em">6'3", 193</p>
+			<p>Height, Weight</p>
+
+		</div>
+		<div class="stats-col" id="k11-box-2">
+			<p class="box-numbers">35</p>
+			<p>Field Goals Made</p>
+		
+		</div>
+		<div class="stats-col" id="k11-box-3">
+			<p class="box-numbers">61</p>
+			<p>Extra Points Made</p>
+		</div>
+		<div class="stats-col" id="k11-box-4">
+			<p class="box-numbers">166</p>
+			<p>Points</p>
+		</div>
+	</div>
+{%endblock%}
+
+{% block twitter %}
+<a class="twitter-timeline" href="https://twitter.com/CParkey36" data-widget-id="716711768186359808">Tweets by @CParkey36</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+{% endblock %}
+
+{% block gif %}
+<iframe src="http://widget.websta.me/in/codyparkey/?s=155&w=3&h=3&b=1&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:510px; height: 510px" ></iframe> <!-- websta - websta.me -->
+{% endblock %}

@@ -14,12 +14,16 @@ a {
 }
 
 footer {
-	margin-top: 5em;
+	background-color: #263238;
+	color:white;
+	margin-top: 3em;
+	padding-top:2em;
+	padding-bottom: 2em; 
 }
 
 .header {
     text-align: left;
-    margin: 10em 6.75em 10em 6.75em;
+    margin: 10em 6.75em 5em 6.75em;
 }
 
 .menu {
@@ -49,6 +53,7 @@ footer {
     height: 100%;
     top: 25%;
     left: 0;
+    padding: 0;
 }
 
 #overlay a {
@@ -91,6 +96,10 @@ footer {
 	background-color: rgba(0,0,0,0.8);
 	-webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+}
+
+.break {
+	display: none;
 }
 
 #k1 {
@@ -156,46 +165,16 @@ footer {
     color: white;
 }
 
-#k1-box-1{
-	background: 
-    linear-gradient(
-      rgba(26, 35, 126, 0.7), 
-      rgba(26, 35, 126, 0.7)
-    ), url('img/box/k1/1.jpg');
-	background-size: cover;
-}
-
-#k1-box-2{
-	background: 
-    linear-gradient(
-      rgba(26, 35, 126, 0.7), 
-      rgba(26, 35, 126, 0.7)
-    ), url('img/box/k1/2.jpg');
-    background-size: cover;
-}
-
-#k1-box-3{
-	background: 
-    linear-gradient(
-      rgba(26, 35, 126, 0.7), 
-      rgba(26, 35, 126, 0.7)
-    ), url('img/box/k1/3.jpg');
-    background-size: cover;
-}
-
-#k1-box-4{
-	background: 
-    linear-gradient(
-      rgba(26, 35, 126, 0.7), 
-      rgba(26, 35, 126, 0.7)
-    ), url('img/box/k1/4.jpg');
-    background-size: cover;
-}
-
 .box-numbers {
     font-size: 3.5em;
     margin-top: 75px;
     margin-bottom: -10px;
+}
+
+.trend {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .rankings-row {
@@ -228,15 +207,454 @@ footer {
     transition-duration: 0.3s;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+/*Kicker Profile Stats Backgrounds*/
+#k1-box-1{
+	background: 
+    linear-gradient(
+      rgba(26, 35, 126, 0.7), 
+      rgba(26, 35, 126, 0.7)
+    ), url('img/box/k1/1.jpg');
+	background-size: cover;
+}
+#k1-box-2{
+	background: 
+    linear-gradient(
+      rgba(26, 35, 126, 0.7), 
+      rgba(26, 35, 126, 0.7)
+    ), url('img/box/k1/2.jpg');
+    background-size: cover;
+}
+#k1-box-3{
+	background: 
+    linear-gradient(
+      rgba(26, 35, 126, 0.7), 
+      rgba(26, 35, 126, 0.7)
+    ), url('img/box/k1/3.jpg');
+    background-size: cover;
+}
+#k1-box-4{
+	background: 
+    linear-gradient(
+      rgba(26, 35, 126, 0.7), 
+      rgba(26, 35, 126, 0.7)
+    ), url('img/box/k1/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k2-box-1{
+	background: 
+    linear-gradient(
+      rgba(30,136,229,0.7), 
+      rgba(30,136,229,0.7)
+    ), url('img/box/k2/1.jpg');
+	background-size: cover;
+}
+#k2-box-2{
+	background: 
+    linear-gradient(
+      rgba(30,136,229,0.7), 
+      rgba(30,136,229,0.7)
+    ), url('img/box/k2/2.jpg');
+    background-size: cover;
+}
+#k2-box-3{
+	background: 
+    linear-gradient(
+	  rgba(30,136,229,0.7), 
+	  rgba(30,136,229,0.7)
+    ), url('img/box/k2/3.jpg');
+    background-size: cover;
+}
+#k2-box-4{
+	background: 
+    linear-gradient(
+      rgba(30,136,229,0.7), 
+      rgba(30,136,229,0.7)
+    ), url('img/box/k2/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k3-box-1{
+	background: 
+    linear-gradient(
+      rgba(105,240,174,0.7), 
+      rgba(105,240,174,0.7)
+    ), url('img/box/k3/1.jpg');
+	background-size: cover;
+}
+#k3-box-2{
+	background: 
+    linear-gradient(
+      rgba(105,240,174,0.7), 
+      rgba(105,240,174,0.7)
+    ), url('img/box/k3/2.jpg');
+    background-size: cover;
+}
+#k3-box-3{
+	background: 
+    linear-gradient(
+	  rgba(105,240,174,0.7), 
+      rgba(105,240,174,0.7)
+    ), url('img/box/k3/3.jpg');
+    background-size: cover;
+}
+#k3-box-4{
+	background: 
+    linear-gradient(
+      rgba(105,240,174,0.7), 
+      rgba(105,240,174,0.7)
+    ), url('img/box/k3/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k4-box-1{
+	background: 
+    linear-gradient(
+      rgba(103,58,183,0.7), 
+      rgba(103,58,183,0.7)
+    ), url('img/box/k4/1.jpg');
+	background-size: cover;
+}
+#k4-box-2{
+	background: 
+    linear-gradient(
+      rgba(103,58,183,0.7), 
+      rgba(103,58,183,0.7)
+    ), url('img/box/k4/2.jpg');
+    background-size: cover;
+}
+#k4-box-3{
+	background: 
+    linear-gradient(
+	  rgba(103,58,183,0.7), 
+      rgba(103,58,183,0.7)
+    ), url('img/box/k4/3.jpg');
+    background-size: cover;
+}
+#k4-box-4{
+	background: 
+    linear-gradient(
+      rgba(103,58,183,0.7), 
+      rgba(103,58,183,0.7)
+    ), url('img/box/k4/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k5-box-1{
+	background: 
+    linear-gradient(
+      rgba(100,181,246,0.7), 
+      rgba(100,181,246,0.7)
+    ), url('img/box/k5/1.jpg');
+	background-size: cover;
+}
+#k5-box-2{
+	background: 
+    linear-gradient(
+      rgba(100,181,246,0.7), 
+      rgba(100,181,246,0.7)
+    ), url('img/box/k5/2.jpg');
+    background-size: cover;
+}
+#k5-box-3{
+	background: 
+    linear-gradient(
+	  rgba(100,181,246,0.7), 
+      rgba(100,181,246,0.7)
+    ), url('img/box/k5/3.jpg');
+    background-size: cover;
+}
+#k5-box-4{
+	background: 
+    linear-gradient(
+      rgba(100,181,246,0.7), 
+      rgba(100,181,246,0.7)
+    ), url('img/box/k5/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k6-box-1{
+	background: 
+    linear-gradient(
+      rgba(255,152,0,0.7), 
+      rgba(255,152,0,0.7)
+    ), url('img/box/k6/1.jpg');
+	background-size: cover;
+}
+#k6-box-2{
+	background: 
+    linear-gradient(
+      rgba(255,152,0,0.7), 
+      rgba(255,152,0,0.7)
+    ), url('img/box/k6/2.jpg');
+    background-size: cover;
+}
+#k6-box-3{
+	background: 
+    linear-gradient(
+	  rgba(255,152,0,0.7), 
+      rgba(255,152,0,0.7)
+    ), url('img/box/k6/3.jpg');
+    background-size: cover;
+}
+#k6-box-4{
+	background: 
+    linear-gradient(
+      rgba(255,152,0,0.7), 
+      rgba(255,152,0,0.7)
+    ), url('img/box/k6/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k7-box-1{
+	background: 
+    linear-gradient(
+      rgba(56,142,60,0.7), 
+      rgba(56,142,60,0.7)
+    ), url('img/box/k7/1.jpg');
+	background-size: cover;
+}
+#k7-box-2{
+	background: 
+    linear-gradient(
+      rgba(56,142,60,0.7), 
+      rgba(56,142,60,0.7)
+    ), url('img/box/k7/2.jpg');
+    background-size: cover;
+}
+#k7-box-3{
+	background: 
+    linear-gradient(
+	  rgba(56,142,60,0.7), 
+      rgba(56,142,60,0.7)
+    ), url('img/box/k7/3.jpg');
+    background-size: cover;
+}
+#k7-box-4{
+	background: 
+    linear-gradient(
+      rgba(56,142,60,0.7), 
+      rgba(56,142,60,0.7)
+    ), url('img/box/k7/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k8-box-1{
+	background: 
+    linear-gradient(
+      rgba(229,57,53,0.7), 
+      rgba(229,57,53,0.7)
+    ), url('img/box/k8/1.jpg');
+	background-size: cover;
+}
+#k8-box-2{
+	background: 
+    linear-gradient(
+      rgba(229,57,53,0.7), 
+      rgba(229,57,53,0.7)
+    ), url('img/box/k8/2.jpg');
+    background-size: cover;
+}
+#k8-box-3{
+	background: 
+    linear-gradient(
+	  rgba(229,57,53,0.7), 
+      rgba(229,57,53,0.7)
+    ), url('img/box/k8/3.jpg');
+    background-size: cover;
+}
+#k8-box-4{
+	background: 
+    linear-gradient(
+      rgba(229,57,53,0.7), 
+      rgba(229,57,53,0.7)
+    ), url('img/box/k8/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k9-box-1{
+	background: 
+    linear-gradient(
+      rgba(26,35,126,0.7), 
+      rgba(26,35,126,0.7)
+    ), url('img/box/k9/1.jpg');
+	background-size: cover;
+}
+#k9-box-2{
+	background: 
+    linear-gradient(
+      rgba(26,35,126,0.7), 
+      rgba(26,35,126,0.7)
+    ), url('img/box/k9/2.jpg');
+    background-size: cover;
+}
+#k9-box-3{
+	background: 
+    linear-gradient(
+	  rgba(26,35,126,0.7), 
+      rgba(26,35,126,0.7)
+    ), url('img/box/k9/3.jpg');
+    background-size: cover;
+}
+#k9-box-4{
+	background: 
+    linear-gradient(
+      rgba(26,35,126,0.7), 
+      rgba(26,35,126,0.7)
+    ), url('img/box/k9/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k10-box-1{
+	background: 
+    linear-gradient(
+	  rgba(77,208,225,0.7), 
+      rgba(77,208,225,0.7)
+    ), url('img/box/k10/1.jpg');
+	background-size: cover;
+}
+#k10-box-2{
+	background: 
+    linear-gradient(
+      rgba(77,208,225,0.7), 
+      rgba(77,208,225,0.7)
+    ), url('img/box/k10/2.jpg');
+    background-size: cover;
+}
+#k10-box-3{
+	background: 
+    linear-gradient(
+	  rgba(77,208,225,0.7), 
+      rgba(77,208,225,0.7)
+    ), url('img/box/k10/3.jpeg');
+    background-size: cover;
+}
+#k10-box-4{
+	background: 
+    linear-gradient(
+      rgba(77,208,225,0.7), 
+      rgba(77,208,225,0.7)
+    ), url('img/box/k10/4.jpg');
+    background-size: cover;
+}
+/*---*/
+#k11-box-1{
+	background: 
+    linear-gradient(
+	  rgba(0,150,136,0.7), 
+      rgba(0,150,136,0.7)
+    ), url('img/box/k11/1.jpg');
+	background-size: cover;
+}
+#k11-box-2{
+	background: 
+    linear-gradient(
+      rgba(0,150,136,0.7), 
+      rgba(0,150,136,0.7)
+    ), url('img/box/k11/2.jpg');
+    background-size: cover;
+}
+#k11-box-3{
+	background: 
+    linear-gradient(
+	  rgba(0,150,136,0.7), 
+      rgba(0,150,136,0.7)
+    ), url('img/box/k11/3.jpg');
+    background-size: cover;
+}
+#k11-box-4{
+	background: 
+    linear-gradient(
+      rgba(0,150,136,0.7), 
+      rgba(0,150,136,0.7)
+    ), url('img/box/k11/4.jpg');
+    background-size: cover;
+}
+
+/****Tablet View****/
+@media screen and (min-width: 569px) and (max-width: 1024px) {
 	.grid-half {
 		width: 45% !important;
 	}
+	.box-numbers {
+		font-size: 2.5em !important;
+	}
+	.left-block {
+		width: 100% !important;
+	}
+	.right-block {
+		width: 100% !important;
+	}
+	.rankings-stats {
+		display: inline !important;
+		color: white !important;
+		margin-left: 10px !important;
+	}
+	.header {
+		margin: 10em 3.75em 5em 3.75em !important;
+	}
+	.menu {
+		right: 3.7em !important;
+	}
+	.rankings-col {
+		font-size: 1em !important;
+	}
+	.stats-col {
+		max-height: 160px !important;
+		width: 22% !important;
+		font-size: 0.8em !important;
+	}
+	.box-numbers {
+		margin-top: 55px !important;
+		font-size: 2em !important;
+	}
+	footer {
+		font-size: 0.7em !important;
+	}
 
 }
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
+/****Mobile View****/
+@media screen and (min-width: 180px) and (max-width: 568px) {
 	.grid-full {
 		width: 100% !important;
+	}
+	.description {
+		font-size: 0.75em;
+	}
+	.header {
+	   margin: 10em 2em 5em 2em !important;
+	}
+	h1 {
+		font-size: 1em !important;
+	}
+	footer {
+		font-size: 0.5em !important;
+	}
+	#overlay a {
+    	font-size: 2em !important;
+	}
+	.menu {
+		top: 2em !important;
+    	right: 1.25em !important;
+	}
+	.team-name {
+		padding-top: 30px;
+	}
+	.team-title {
+		width: 200px !important;
+	}
+	.smicon {
+		margin-left: 0px !important;
+	}
+	.break {
+		display: inline !important;
+	}
+	.stats-col {
+		width: 100% !important;
+    	margin-bottom: 10px;
+	}
+	.right-block {
+		max-width: 165px !important;
+    	overflow: hidden !important;
 	}
 }

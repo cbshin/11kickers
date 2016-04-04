@@ -2,16 +2,39 @@
 <html lang="en">
 <head>
 <title>11 Kickers</title>
-      <link rel="stylesheet" type="text/css" href="static/style.css"/>
-      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<meta charset = "UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset = "UTF-8">
+	<script type="text/javascript">
+	    function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block')
+	          e.style.display = 'none';
+	       else
+	          e.style.display = 'block';
+	    }
+	</script>
 </head>
 <body>
-	<!-- <div class="bar"></div> -->
+	<div class="menu">
+		<a href="#" onclick="toggle_visibility('overlay');"><i class="fa fa-bars fa-2x" style="color:black;background-color: white;
+    padding: 15px;"></i></a>
+	</div>
+
+	<div id="overlay" style="display:none;">
+		<nav>
+			<ul>
+				<li><a href="../">Home</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="rankings.html">Rankings</a></li>
+			</ul>
+		</nav>
+	</div>
 
 	<div class="header">
-		<h3>
+		<h3 class="team-title">
 		{% block team %}
 		{% endblock %}
 		</h3>
@@ -21,31 +44,31 @@
 		{% block rankings %}
 		{% endblock %}
 
+		<div class="trend">
+			{% block trend %}
+			{% endblock %}
+		</div>
+
 		{% block social %}
 		{% endblock %}
 
 		{% block stats %}
 		{% endblock %}
 
-		<div style="width:100%;margin-top:25px;">
-			<div style="display:inline-block;vertical-align:top;">
+		<div style="width:100%;margin-top:25px;text-align: center;">
+			<div class="left-block" style="display:inline-block;vertical-align:top;">
 				{% block twitter %}
 				{% endblock %}
 			</div>
-			<div style="display:inline-block;vertical-align:top;margin-top:40px;">
+			<div class="right-block" style="display:inline-block;vertical-align:top;margin-top:40px;">
 				{% block gif %}
 				{% endblock %}
 			</div>
 		</div>
-		
-		
 	</div>
 
-
-	
-
   <footer>
-  	<p>Copyright &copy; 11 Kickers. 11 Kickers is not affiliated with the NFL in any way, shape, or form. </p>
+  	<p>Copyright &copy; 11 Kickers. 11 Kickers is not affiliated with the NFL in any way, shape, or form. Quotes may or may not be fictitious.</p>
   </footer>
 </body>
 </html>

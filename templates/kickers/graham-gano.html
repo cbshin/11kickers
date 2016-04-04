@@ -1,6 +1,63 @@
 {% extends "templates/profile.html" %}
-{% block content %} 
+{% block team %} 
+	<span style="background-color:#4DD0E1;margin-right:10px;padding: 15px;font-size: 2em;color: white;">#9</span>
+	<span class="team-name" style="display:inline-block;vertical-align: middle;font-size: 1.5em;">
+		Carolina <br>
+		Panthers
+	</span>
+{%endblock%}
+
+{% block social %} 
 	<p>
-		Stats about stephen gost
+		<a href="https://www.facebook.com/GrahamGano9/?rf=108802315810241">
+			<span style="color:#3F51B5;">
+				<i class="fa fa-facebook-square"></i> 
+				/GrahamGano
+			</span>
+		</a><span class="break"><br></span>
+		<a href="https://twitter.com/GrahamGano">
+			<span style="color:#2196F3;">
+				<i class="fa fa-twitter-square smicon" style="margin-left:10px;"></i> 
+				@ChandlerCatanzaro
+			</span>
+		</a><span class="break"><br></span>
+		<a href="https://www.instagram.com/grahamgano9/">
+			<span style="color:#009688;">
+				<i class="fa fa-instagram smicon" style="margin-left:10px;"></i> 
+				@grahamgano9
+			</span>
+		</a>
 	</p>
 {%endblock%}
+
+{% block stats %}
+	<div class="stats-row">
+		<div class="stats-col" id="k10-box-1">
+			<p class="box-numbers" style="font-size:3em">6'2", 205</p>
+			<p>Height, Weight</p>
+
+		</div>
+		<div class="stats-col" id="k10-box-2">
+			<p class="box-numbers">151</p>
+			<p>Field Goals Made</p>
+		
+		</div>
+		<div class="stats-col" id="k10-box-3">
+			<p class="box-numbers">211</p>
+			<p>Extra Points Made</p>
+		</div>
+		<div class="stats-col" id="k10-box-4">
+			<p class="box-numbers">664</p>
+			<p>Points</p>
+		</div>
+	</div>
+{%endblock%}
+
+{% block twitter %}
+<a class="twitter-timeline" href="https://twitter.com/GrahamGano" data-widget-id="716710302277042176">Tweets by @GrahamGano</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+{% endblock %}
+
+{% block gif %}
+<iframe src="http://widget.websta.me/in/grahamgano9/?s=155&w=3&h=3&b=1&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:510px; height: 510px" ></iframe> <!-- websta - websta.me -->
+{% endblock %}

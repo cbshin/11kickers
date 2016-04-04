@@ -1,6 +1,63 @@
 {% extends "templates/profile.html" %}
-{% block content %} 
+{% block team %} 
+	<span style="background-color:#64B5F6;margin-right:10px;padding: 15px;font-size: 2em;color: white;">#5</span>
+	<span class="team-name" style="display:inline-block;vertical-align: middle;font-size: 1.5em;">
+		Detroit <br>
+		Lions
+	</span>
+{%endblock%}
+
+{% block social %} 
 	<p>
-		Stats about stephen gost
+		<a href="https://www.facebook.com/pages/Matt-Prater/109421685750894?fref=ts">
+			<span style="color:#3F51B5;">
+				<i class="fa fa-facebook-square"></i> 
+				/MattPrater
+			</span>
+		</a><span class="break"><br></span>
+		<a href="#">
+			<span style="color:#2196F3;">
+				<i class="fa fa-twitter-square smicon" style="margin-left:10px;"></i> 
+				@mattprater5
+			</span>
+		</a><span class="break"><br></span>
+		<a href="https://www.instagram.com/matt_prater_/">
+			<span style="color:#009688;">
+				<i class="fa fa-instagram smicon" style="margin-left:10px;"></i> 
+				@mattprater
+			</span>
+		</a>
 	</p>
 {%endblock%}
+
+{% block stats %}
+	<div class="stats-row">
+		<div class="stats-col" id="k5-box-1">
+			<p class="box-numbers" style="font-size:3em">5'10", 211</p>
+			<p>Height, Weight</p>
+		
+		</div>
+		<div class="stats-col" id="k5-box-2">
+			<p class="box-numbers">185</p>
+			<p>Field Goals Made</p>
+		
+		</div>
+		<div class="stats-col" id="k5-box-3">
+			<p class="box-numbers">317</p>
+			<p>Extra Points Made</p>
+		</div>
+		<div class="stats-col" id="k5-box-4">
+			<p class="box-numbers">872</p>
+			<p>Points</p>
+		</div>
+	</div>
+{%endblock%}
+
+{% block twitter %}
+<a class="twitter-timeline" href="https://twitter.com/Lions" data-widget-id="716704109991174145">Tweets by @Lions</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+{% endblock %}
+
+{% block gif %}
+<iframe src="http://widget.websta.me/in/detroitlionsnfl//?s=155&w=3&h=3&b=1&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:510px; height: 510px" ></iframe> <!-- websta - websta.me -->
+{% endblock %}

@@ -39,12 +39,12 @@ class MainHandler(webapp2.RequestHandler):
             elif (self.request.path == '/steven-hauschka.html'):
                 variables = {
                     'title': 'Steven Hauschka',
-                    'quote': 'quote'
+                    'quote': 'What\'s a seahawk?'
                 }
             elif (self.request.path == '/justin-tucker.html'):
                 variables = {
                     'title': 'Justin Tucker',
-                    'quote': 'quote'
+                    'quote': 'Yeah of course I\'m terrified of Ray Lewis.'
                 }
             elif (self.request.path == '/matt-prater.html'):
                 variables = {
@@ -54,12 +54,12 @@ class MainHandler(webapp2.RequestHandler):
             elif (self.request.path == '/brandon-mcmanus.html'):
                 variables = {
                     'title': 'Brandon McManus',
-                    'quote': 'quote'
+                    'quote': 'Peyton\'s forehead is larger in real person.'
                 }
             elif (self.request.path == '/mason-crosby.html'):
                 variables = {
                     'title': 'Mason Crosby',
-                    'quote': 'quote'
+                    'quote': 'Yeah the whole team get\'s discount double checks.'
                 }
             elif (self.request.path == '/chandler-catanzaro.html'):
                 variables = {

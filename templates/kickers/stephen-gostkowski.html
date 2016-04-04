@@ -1,7 +1,7 @@
 {% extends "templates/profile.html" %}
 {% block team %} 
 	<span style="background-color:#1A237E;margin-right:10px;padding: 15px;font-size: 2em;color: white;">#3</span>
-	<span style="display:inline-block;vertical-align: middle;font-size: 1.5em;">
+	<span class="team-name" style="display:inline-block;vertical-align: middle;font-size: 1.5em;">
 		New England <br>
 		Patriots
 	</span>
@@ -9,21 +9,21 @@
 
 {% block social %} 
 	<p>
-		<a href="">
+		<a href="https://www.facebook.com/pages/Stephen-Gostkowski/104053339631747">
 			<span style="color:#3F51B5;">
 				<i class="fa fa-facebook-square"></i> 
 				/StephenGostkowski
 			</span>
-		</a>
-		<a href="">
+		</a><span class="break"><br></span>
+		<a href="https://twitter.com/gostkowski">
 			<span style="color:#2196F3;">
-				<i class="fa fa-twitter-square" style="margin-left:10px;"></i> 
+				<i class="fa fa-twitter-square smicon" style="margin-left:10px;"></i> 
 				@gostkowski
 			</span>
-		</a>
-		<a href="">
+		</a><span class="break"><br></span>
+		<a href="https://www.instagram.com/stephengostkowski3/">
 			<span style="color:#009688;">
-				<i class="fa fa-instagram" style="margin-left:10px;"></i> 
+				<i class="fa fa-instagram smicon" style="margin-left:10px;"></i> 
 				@stephengostkowski3
 			</span>
 		</a>
@@ -33,7 +33,7 @@
 {% block stats %}
 	<div class="stats-row">
 		<div class="stats-col" id="k1-box-1">
-			<p class="box-numbers">6'1", 215</p>
+			<p class="box-numbers" style="font-size:3em">6'1", 215</p>
 			<p>Height, Weight</p>
 
 		</div>
