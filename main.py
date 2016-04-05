@@ -9,19 +9,6 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-# class MainHandler(webapp2.RequestHandler):
-#     def get(self):
-#         logging.info(self.request.path)
-#     	template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-#     	self.response.write(template.render())
-
-# class KickerHandler(webapp2.RequestHandler):
-#     def get(self):
-#         logging.info(self.request.path)
-#     	template = JINJA_ENVIRONMENT.get_template('templates/profile.html')
-#     	self.response.write(template.render(
-#             ))
-
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         try:
@@ -86,6 +73,11 @@ class MainHandler(webapp2.RequestHandler):
                     'title': 'Rankings',
                     'quote': 'The best kickers can open multiple jars of pickles.'
                 }
+            elif (self.request.path == '/gallery.html'):
+                variables = {
+                    'title': 'Gallery',
+                    'quote': 'Being a kicker means you eat mayo with everything.'
+                }
             self.response.write(template.render(variables))
         except:
             template = JINJA_ENVIRONMENT.get_template('templates/index.html')
@@ -105,4 +97,5 @@ app = webapp2.WSGIApplication([
     ('/graham-gano.html', MainHandler),
     ('/cody-parkey.html', MainHandler),
     ('/rankings.html', MainHandler),
+    ('/gallery.html', MainHandler),
 ], debug=True)
