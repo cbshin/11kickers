@@ -14,7 +14,8 @@ footer {
 	color:white;
 	margin-top: 3em;
 	padding-top:2em;
-	padding-bottom: 2em; 
+	padding-bottom: 2em;
+  width: 100%;
 }
 
 .header {
@@ -22,12 +23,19 @@ footer {
     margin: 10em 6.75em 5em 6.75em;
 }
 
+.site-logo {
+  position: absolute;
+  width: 75px;
+  top: 2em;
+  left: 5.75em;
+}
+
 .menu {
 	position: absolute;
 	text-decoration: none;
 	top: 5em;
-    right: 8.25em;
-    z-index:999;
+  right: 8.25em;
+  z-index:999;
 }
 
 #overlay {
@@ -592,6 +600,9 @@ footer {
 	.menu {
 		right: 3.7em !important;
 	}
+  .site-logo {
+    left: 2.7em !important;
+  }
 	.rankings-col {
 		font-size: 1em !important;
 	}
@@ -634,8 +645,12 @@ footer {
 	}
 	.menu {
 		top: 2em !important;
-    	right: 1.25em !important;
+    right: 1.25em !important;
 	}
+  .site-logo {
+    top: 1em !important;
+    left: 1.25em !important;
+  }
 	.team-name {
 		padding-top: 30px;
 	}
